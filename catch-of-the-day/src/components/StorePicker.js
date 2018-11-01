@@ -22,7 +22,7 @@ class StorePicker extends React.Component {
     // stop form from submiting
     event.preventDefault();
     // get text from input
-    const storeName = this.myInput.value.value;
+    const storeName = this.myInput.value;
     // change page to /store/whatever-they-entered
     this.props.history.push(`/store/${storeName}`);
   }
